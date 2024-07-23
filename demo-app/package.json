@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "sketchycodeglyn": "^0.0.0",
+    "codeglynuikit": "^0.0.1",
     "vue": "^3.4.31"
   },
   "devDependencies": {

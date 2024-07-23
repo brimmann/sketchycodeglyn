@@ -1,14 +1,16 @@
 {
-  "name": "sketchycodeglyn",
-  "version": "0.0.0",
+  "name": "codeglynuikit",
+  "version": "0.0.1",
   "type": "module",
-  "files": ["dist"],
-  "main": "./dist/sketchycodeglyn.cjs",
-  "module": "./dist/sketchycodeglyn.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/codeglynuikit.cjs",
+  "module": "./dist/codeglynuikit.js",
   "exports": {
     ".": {
-      "import": "./dist/sketchycodeglyn.js",
-      "require": "./dist/sketchycodeglyn.cjs"
+      "import": "./dist/codeglynuikit.js",
+      "require": "./dist/codeglynuikit.cjs"
     }
   },
   "scripts": {

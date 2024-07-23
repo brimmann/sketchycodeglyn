@@ -4,5 +4,5 @@
 </template>
 
 <script setup>
-import { MyTest } from "sketchycodeglyn"
+import { MyTest } from "codeglynuikit"
 </script>
