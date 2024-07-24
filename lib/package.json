@@ -19,10 +19,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "roughjs": "^4.6.6",
     "vue": "^3.4.31"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vite-plugin-css-injected-by-js": "^3.5.1"
+  },
+  "peerDependencies": {
+    "roughjs": "^4.6.6"
   }
 }
