@@ -1,5 +1,5 @@
 <script>
-import { computed, h, onMounted, ref, useCssModule } from "vue";
+import { computed, h, ref, useCssModule } from "vue";
 import SketchyDiv from "../sketchydiv/SketchyDiv.vue";
 
 export default {
