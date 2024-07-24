@@ -1,8 +1,7 @@
 <template>
-  <h1>Demo App is running</h1>
-  <MyTest/>
+  <SketchyDiv>INsied</SketchyDiv>
 </template>
 
 <script setup>
-import { MyTest } from "codeglynuikit"
+import { SketchyDiv } from "codeglynuikit";
 </script>
