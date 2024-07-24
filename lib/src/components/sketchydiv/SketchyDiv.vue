@@ -7,6 +7,7 @@ import {
   onUpdated,
   ref,
   useCssModule,
+  watch,
 } from "vue";
 import rough from "roughjs";
 
@@ -66,6 +67,10 @@ export default {
       }
       return updatedClasses;
     });
+    watch(props, () => {
+      clearCanvas()
+      drawDiv()
+    })
 
     function drawDiv() {
       const rc = rough.canvas(canvasRef.value);
