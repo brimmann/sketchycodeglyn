@@ -7,7 +7,6 @@ import {
   onUpdated,
   ref,
   useCssModule,
-  watch,
 } from "vue";
 import rough from "roughjs";
 
@@ -67,10 +66,6 @@ export default {
       }
       return updatedClasses;
     });
-    watch(props, () => {
-      clearCanvas();
-      drawDiv();
-    });
 
     function drawDiv() {
       const rc = rough.canvas(canvasRef.value);
@@ -87,25 +82,18 @@ export default {
         size.value.width = containerRef.value.clientWidth;
         size.value.height = containerRef.value.clientHeight;
         drawDiv();
-
-        // This part automatically update the convas as it's external parent's size is updated
-        // const contResizeObserver = new ResizeObserver(() => {
-        //   if (containerRef.value) {
-        //     size.value.width = containerRef.value.clientWidth;
-        //     size.value.height = containerRef.value.clientHeight;
-        //     clearCanvas();
-        //     drawDiv();
-        //   }
-        // });
-        // contResizeObserver.observe(containerRef.value);
       });
     });
     onUpdated(() => {
       nextTick(() => {
+        size.value.width = containerRef.value.clientWidth;
+        size.value.height = containerRef.value.clientHeight;
         clearCanvas();
         drawDiv();
       });
     });
+
+    
 
     return () => {
       const child = [
@@ -139,4 +127,6 @@ export default {
   left: 0;
   right: 0;
 }
+
+
 </style>
