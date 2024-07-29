@@ -1,0 +1,13 @@
+{
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "plugins": [
+    "@semantic-release/npm",
+    {
+      "pkgRoot": "./lib"
+    }
+  ]
+}
