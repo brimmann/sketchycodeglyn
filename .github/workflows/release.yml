@@ -1,8 +1,7 @@
 name: Release
 on:
   push:
-    branches:
-      release-workflow
+    branches: release-workflow
 
 permissions:
   contents: read # for checkout
@@ -11,6 +10,9 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./lib
     permissions:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
@@ -29,6 +31,8 @@ jobs:
         run: npm install
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
+      - name: Building
+        run: npm run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
