@@ -78,7 +78,7 @@ const tab = ref("focuz")
 </style>
 ```
 ## Contributing
-We welcome contributions to the Vue Sketchy Components Library! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request on our GitHub repository or you can also contact me through my email. I would love to hear from me.
+We welcome contributions to the Vue Sketchy Components Library! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request on our GitHub repository or you can also contact me through my email. I would love to hear from you.
 
 ## Licence
 This project is licensed under the MIT License. See the LICENSE file for more details.
