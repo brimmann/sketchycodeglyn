@@ -13,6 +13,33 @@
       "require": "./dist/codeglynuikit.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quasarframework/sketchycodeglyn.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "components",
+    "js",
+    "phone",
+    "tablet",
+    "desktop",
+    "spa",
+    "pwa",
+    "website",
+    "library"
+  ],
+  "author": {
+    "name": "Mohammad Rashid Stanikzai",
+    "email": "mohammadrashidstanikzai@gmail.com",
+    "url": "https://codeglyn.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brimmann/sketchycodeglyn/issues"
+  },
+  "homepage": "https://github.com/quasarframework/sketchycodeglyn",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
