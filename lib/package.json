@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarframework/sketchycodeglyn.git"
+    "url": "git+https://github.com/brimmann/sketchycodeglyn.git"
   },
   "keywords": [
     "vuejs",
@@ -39,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/brimmann/sketchycodeglyn/issues"
   },
-  "homepage": "https://github.com/quasarframework/sketchycodeglyn",
+  "homepage": "https://github.com/brimmann/sketchycodeglyn",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
