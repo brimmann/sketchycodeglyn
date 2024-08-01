@@ -68,18 +68,22 @@ export default {
       return updatedClasses;
     });
     watch(props, () => {
-      clearCanvas()
-      drawDiv()
-    })
+      clearCanvas();
+      drawDiv();
+    });
 
     function drawDiv() {
-      const rc = rough.canvas(canvasRef.value);
-      rc.rectangle(0, 0, size.value.width, size.value.height, options.value);
+      if (canvasRef.value) {
+        const rc = rough.canvas(canvasRef.value);
+        rc.rectangle(0, 0, size.value.width, size.value.height, options.value);
+      }
     }
     function clearCanvas() {
-      canvasRef.value
-        .getContext("2d")
-        .clearRect(0, 0, size.value.width, size.value.height);
+      if (canvasRef.value) {
+        canvasRef.value
+          .getContext("2d")
+          .clearRect(0, 0, size.value.width, size.value.height);
+      }
     }
 
     onMounted(() => {
@@ -97,8 +101,6 @@ export default {
         drawDiv();
       });
     });
-
-    
 
     return () => {
       const child = [
@@ -132,6 +134,4 @@ export default {
   left: 0;
   right: 0;
 }
-
-
 </style>
