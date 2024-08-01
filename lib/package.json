@@ -44,7 +44,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:browser": "vitest"
+    "test:unit": "vitest"
   },
   "dependencies": {
     "roughjs": "^4.6.6",

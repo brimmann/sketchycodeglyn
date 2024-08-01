@@ -2,11 +2,12 @@
 These are some unit test cases for SketchyDiv component
 
 ## Rendering
-- div and convas dimensions matches
+- container div exist
+- canvas size is not 0 if container is greator then 0
 
 
 ## Props
-- classes passed to it are part of the container div
+- classes passed to it are classes of the container div
 
 ## Events
 - emit `click` event when clicked
@@ -15,9 +16,7 @@ These are some unit test cases for SketchyDiv component
 - *no tests specified*
 
 ## Slots
-- render a div in the dom
-- contain the text passed to it
-- contain the element passed to it
+- render a div that is passed in the slot
 
 ## Accessibility
 - *no tests specified*

@@ -1,5 +1,5 @@
 <template>
-  <SketchyDiv class="pd" style="margin-bottom: 10px">INsied</SketchyDiv>
+  <SketchyDiv style="padding: 80px;"></SketchyDiv>
   <SketchyBtn
     label="Click"
     style="padding: 10px 5px; font-size: 18px; margin-bottom: 100px"
@@ -15,7 +15,8 @@
 </template>
 
 <script setup>
-import { SketchyDiv, SketchyBtn, SketchyHLine, SketchyTab, SketchyTabs } from "codeglynuikit";
+import {  SketchyBtn, SketchyHLine, SketchyTab, SketchyTabs } from "codeglynuikit";
+import SketchyDiv from "../../lib/src/components/sketchydiv/SketchyDiv.vue";
 import { ref } from "vue";
 
 const tab = ref("focuz")
