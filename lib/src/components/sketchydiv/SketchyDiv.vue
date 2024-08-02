@@ -87,18 +87,14 @@ export default {
     }
 
     onMounted(() => {
-      console.log("onMounted, outNext", containerRef.value.clientHeight)
       nextTick(() => {
-        console.log("onMounted, inNext", containerRef.value.clientHeight)
         size.value.width = containerRef.value.clientWidth;
         size.value.height = containerRef.value.clientHeight;
         drawDiv();
       });
     });
     onUpdated(() => {
-      console.log("onUpdated, outNext", containerRef.value.clientHeight)
       nextTick(() => {
-        console.log("onUpdated, inNext", containerRef.value.clientHeight)
         size.value.width = containerRef.value.clientWidth;
         size.value.height = containerRef.value.clientHeight;
         clearCanvas();
