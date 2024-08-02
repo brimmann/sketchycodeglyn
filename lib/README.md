@@ -2,6 +2,11 @@
 
 Welcome to the **Codeglyn UI Kit**! This library is designed to help you save time and money by providing simple yet powerful UI components that you can easily integrate into your projects.
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brimmann/sketchycodeglyn/.github%2Fworkflows%2Frelease.yml?branch=main)
+![GitHub Release](https://img.shields.io/github/v/release/brimmann/sketchycodeglyn)
+![NPM Downloads](https://img.shields.io/npm/dw/codeglynuikit)
+![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/brimmannn?style=social)
+
 ## Table of Contents
 
 - Introduction
