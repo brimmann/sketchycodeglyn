@@ -44,7 +44,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest run"
+    "test:unit": "vitest run",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "roughjs": "^4.6.6",
@@ -54,6 +55,7 @@
     "@testing-library/vue": "8.1.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitest/browser": "2.0.5",
+    "@vitest/coverage-istanbul": "2.0.5",
     "@vue/test-utils": "2.4.6",
     "jsdom": "24.1.1",
     "playwright": "1.45.3",
