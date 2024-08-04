@@ -7,6 +7,14 @@ Welcome to the **Codeglyn UI Kit**! This library is designed to help you save ti
 ![NPM Downloads](https://img.shields.io/npm/dw/codeglynuikit)
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/brimmannn?style=social)
 
+## Design Goals
+- To constrain visual complexity of user interface
+- To promote focus on alignmet of user interface elements
+- To reduce information load in a single screen
+- To introduce more fluent flow of infomration and interactions on interface
+
+**NOTE:** These goals need further refinement so before creating a pull request please contact me.
+
 ## Table of Contents
 
 - Introduction
